@@ -13,7 +13,14 @@ def add_contact():
 
 
 def view_contacts():
-    pass
+    if not phonebook:
+        print("Danh bạ trống.")
+        return
+
+    print("\n--- DANH BẠ ---")
+    for i, c in enumerate(phonebook, start=1):
+        print(f"{i}. {c['name']} - {c['phone']}")
+
 
 def search_contact():
     pass
