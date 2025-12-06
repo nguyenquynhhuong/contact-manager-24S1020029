@@ -1,7 +1,16 @@
 phonebook = []
 
 def add_contact():
-    pass
+    name = input("Nhập tên: ")
+    phone = input("Nhập số điện thoại: ")
+
+    phonebook.append({
+        'name': name,
+        'phone': phone
+    })
+
+    print("✔ Đã thêm liên hệ.")
+
 
 def view_contacts():
     pass
