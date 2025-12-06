@@ -23,7 +23,15 @@ def view_contacts():
 
 
 def search_contact():
-    pass
+    name = input("Nhập tên cần tìm: ")
+
+    for c in phonebook:
+        if c['name'].lower() == name.lower():
+            print("Tìm thấy!")
+            print(f"SĐT: {c['phone']}")
+            return
+
+    print("❌ Không tìm thấy.")
 
 def main():
     while True:
